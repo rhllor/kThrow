@@ -55,6 +55,7 @@
         <kotlin-maven-plugin.version>1.7.10</kotlin-maven-plugin.version>
         <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
         <maven-failsafe-plugin.version>2.22.2</maven-failsafe-plugin.version>
+        <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
     </properties>
 
     <repositories>
@@ -63,6 +64,12 @@
             <url>https://repo1.maven.org/maven2/</url>
         </repository>
     </repositories>
+
+    <scm>
+        <connection>scm:git:git@github.com:rhllor/kThrow.git</connection>
+        <developerConnection>scm:git:git@github.com:rhllor/kThrow.git</developerConnection>
+        <url>https://github.com/rhllor/kThrow/tree/main</url>
+    </scm>
 
     <build>
         <sourceDirectory>src/main/kotlin</sourceDirectory>
@@ -96,6 +103,14 @@
             <plugin>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>${maven-failsafe-plugin.version}</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>${maven-release-plugin.version}</version>
+                <configuration>
+                    <useReleaseProfile>false</useReleaseProfile>
+                </configuration>
             </plugin>
         </plugins>
     </build>
