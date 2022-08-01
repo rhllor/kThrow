@@ -68,7 +68,7 @@
         <developerConnection>scm:git:git@github.com:rhllor/kThrow.git</developerConnection>
         <url>https://github.com/rhllor/kThrow/tree/main</url>
       <tag>HEAD</tag>
-  </scm>
+    </scm>
 
     <build>
         <sourceDirectory>src/main/kotlin</sourceDirectory>

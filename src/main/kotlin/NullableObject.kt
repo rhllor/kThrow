@@ -1,3 +1,5 @@
 package com.github.rhllor
 
-fun Any?.kThrow(): Nothing = throw NotImplementedError(this.toString())
+import com.github.rhllor.internal.NullableKThrow
+
+fun Any?.kThrow(): NullableKThrow<Any?> = NullableKThrow(this)
