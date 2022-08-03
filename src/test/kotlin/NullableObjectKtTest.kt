@@ -9,7 +9,7 @@ internal class NullableObjectKtTest {
     @Test
     fun `throw IllegalArgumentException when object is null`() {
         var exception = assertThrows<IllegalArgumentException> { (null).kThrow().ifNull() }
-        assertEquals(exception.message, "Value is null")
+        assertEquals(exception.message, "Value cannot be null")
     }
 
     @Test

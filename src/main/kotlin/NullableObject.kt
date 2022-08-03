@@ -1,5 +1,5 @@
 package com.github.rhllor
 
-import com.github.rhllor.internal.NullableKThrow
+import com.github.rhllor.internal.NullableObjectKThrow
 
-fun Any?.kThrow(): NullableKThrow<Any?> = NullableKThrow(this)
+fun Any?.kThrow(): NullableObjectKThrow<Any?> = NullableObjectKThrow(this)
