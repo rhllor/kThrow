@@ -4,5 +4,5 @@ import java.lang.IllegalArgumentException
 
 class NullableKThrow<T: Any?>(private val value: T) : KThrow<T>(value) {
 
-    fun ifNull(): NullableKThrow<T> = throwException({ it == null }, { IllegalArgumentException("value is null") })
+    fun ifNull(message: String = "Value is null"): NullableKThrow<T> = throwException({ it == null }, { IllegalArgumentException(message) })
 }
