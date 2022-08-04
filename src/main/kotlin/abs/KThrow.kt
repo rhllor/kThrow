@@ -1,4 +1,4 @@
-package com.github.rhllor.internal
+package com.github.rhllor.abs
 
 abstract class KThrow<T>(private val value: T){
 

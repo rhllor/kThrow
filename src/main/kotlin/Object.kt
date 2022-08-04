@@ -1,8 +1,5 @@
 package com.github.rhllor
 
-import com.github.rhllor.internal.BooleanKThrow
-import com.github.rhllor.internal.ObjectKThrow
+import com.github.rhllor.impl.BooleanKThrowImpl
 
-fun Any.kThrow(): ObjectKThrow<Any> = throw NotImplementedError(this.toString())
-
-fun Boolean.kThrow(): BooleanKThrow = BooleanKThrow(this)
+fun Boolean.kThrow(): BooleanKThrowImpl = BooleanKThrowImpl(this)
