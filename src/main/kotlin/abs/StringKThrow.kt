@@ -13,10 +13,6 @@ interface StringKThrow {
 
     fun ifLongerThan(length: Int, message: String = "String should not be longer than {0} characters"): StringKThrow
 
-    fun ifEquals(valueToCompare: String, ignoreCase: Boolean = false, message: String = "String should not be equal to '{0}'"): StringKThrow
-
-    fun ifNotEquals(valueToCompare: String, ignoreCase: Boolean = false, message: String = "String should be equal to '{0}'"): StringKThrow
-
     fun ifContains(valueToSearch: String, ignoreCase: Boolean = false, message: String = "String should not contain '{0}'"): StringKThrow
 
     fun ifNotContains(valueToSearch: String, ignoreCase: Boolean = false, message: String = "String should contain '{0}'"): StringKThrow

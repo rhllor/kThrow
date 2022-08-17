@@ -9,10 +9,6 @@ interface NumericKThrow<T> {
 
     fun ifNegative(message: String = "Value should not be less than 0"): NumericKThrow<T>
 
-    fun ifEqual(valueToCompare: T, message: String = "Value should not be equal than {0}"): NumericKThrow<T>
-
-    fun ifNotEqual(valueToCompare: T, message: String = "Value should be equal than {0}"): NumericKThrow<T>
-
     fun ifLessThan(valueToCompare: T, message: String = "Value should not be less than {0}"): NumericKThrow<T>
 
     fun ifGreaterThan(valueToCompare: T, message: String = "Value should not be greater than {0}"): NumericKThrow<T>
